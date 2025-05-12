@@ -1,0 +1,332 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Bad Ugly - Cinematic Booty!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(10, 10, 10); /* Even darker seas! */
+            color: #e0e0e0; /* Weathered parchment */
+            font-family: 'Open Sans', sans-serif;
+            scrollbar-color: rgb(42, 44, 46) rgb(28, 30, 31);
+            margin: 0;
+            padding: 0;
+        }
+        .page-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            background: rgb(20, 20, 20);
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(204, 197, 185, 0.3);
+        }
+        .page-title {
+            background: rgb(30, 30, 30); /* Darker header */
+            border-radius: 3px;
+            box-shadow: rgba(204, 197, 185, 0.5) 0px 0px 1px;
+            color: #FFD700; /* Gold! */
+            font-family: 'Luckiest Guy', cursive; /* Pirate Font! */
+            font-size: 28px; /* A bit bigger for the Cap'n */
+            height: auto; /* Flexible height */
+            line-height: 1.2;
+            margin: -5px 0px 15px;
+            overflow: hidden;
+            padding: 15px 8px;
+            text-align: center;
+            text-overflow: ellipsis;
+            border-bottom: 3px solid #8B4513; /* Wooden plank border */
+        }
+        .material-icons {
+            box-sizing: border-box;
+            direction: ltr;
+            display: inline-block;
+            font-family: "Material Icons"; /* Assuming this is loaded elsewhere or is a standard icon */
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 1;
+            margin: 0px;
+            overflow-wrap: normal;
+            padding: 0px;
+            text-wrap-mode: nowrap;
+            vertical-align: middle;
+        }
+        .material-text {
+            box-sizing: border-box;
+            font-size: 24px; /* Bigger text for the Cap'n */
+            left: 2px;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            top: -4px;
+        }
+        .centered-text p, .centered-text div {
+            color: rgba(204, 204, 204, 0.85);
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            margin: 10px 4px;
+            padding: 0px;
+            text-align: center;
+        }
+        .movie-poster {
+            border: 3px solid #8B4513; /* Wooden frame */
+            box-sizing: border-box;
+            clear: both;
+            height: auto;
+            margin: 15px auto;
+            display: block;
+            max-width: 80%; /* Responsive */
+            padding: 0px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+        .info-section h2 {
+            color: #FFD700; /* Gold! */
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 24px;
+            line-height: 1.1;
+            margin: 25px 0px 15px;
+            padding: 0px;
+            text-align: center;
+        }
+        .info-section div {
+            margin-bottom: 8px;
+        }
+        .info-label {
+            font-weight: 600;
+            font-family: 'Luckiest Guy', cursive;
+            color: #FFA500; /* Orange-gold */
+        }
+        .highlight-text {
+            color: #FF4500; /* Fiery red for emphasis */
+            font-weight: bold;
+        }
+        .screenshots-header {
+            color: #FFD700 !important;
+            font-family: 'Luckiest Guy', cursive !important;
+            font-size: 24px !important;
+            margin: 20px 0px 10px !important;
+        }
+        .screenshots-container {
+            text-align: center; /* Center the screenshots */
+        }
+        .screenshots-container img {
+            border: 2px solid #8B4513; /* Wooden frame */
+            height: auto;
+            margin: 5px;
+            max-width: 45%; /* Two per row on smaller screens */
+            padding: 0px;
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+        .download-links-header {
+            color: #32CD32 !important; /* Green for GO! */
+            font-family: 'Luckiest Guy', cursive !important;
+        }
+        .download-section hr {
+            border: 0;
+            border-top: 3px dashed #8B4513; /* Dashed wooden line */
+            margin: 20px 5%;
+        }
+        .download-section h2 {
+            text-align: center;
+        }
+        .download-link-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+        .download-link-container a {
+            color: #FF4500; /* Fiery red for links */
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .download-link-container a:hover {
+            color: #FFD700; /* Gold on hover */
+            text-decoration: underline;
+        }
+        .separator-line {
+            color: #8B4513; /* Wooden color */
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        /* Responsive adjustments for screenshots */
+        @media (max-width: 600px) {
+            .screenshots-container img {
+                max-width: 90%; /* One per row on very small screens */
+            }
+            .page-title {
+                font-size: 22px;
+            }
+            .material-text {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="page-container">
+    <p style="text-align: center; font-family: 'Luckiest Guy', cursive; color: #FFA500;"> Prepare to be boarded by ENTERTAINMENT! </p>
+    <h1 class="page-title">
+        <span class="material-icons" style="font-size: 30px;">☠️</span>  <!-- Skull and Crossbones (if material icons has it, or use an emoji) -->
+        <span class="material-text">Cap'n's Pick: Good Bad Ugly (2025) - A WEB-DL Treasure Chest!</span>
+    </h1>
+    
+    <div class="centered-text">
+        <p>
+            <span style="font-family: 'Luckiest Guy', cursive; color: #FFD700;">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <span style="font-weight: 600;">Ahoy, Mateys! Snag Yer Copy o' Good Bad Ugly (2025) WEB-DL Treasure!</span><br />
+                    [Hindi (Boomin' DD5.1) & Tamil Tones] 2160p Galleon, 1080p Frigate, 720p Sloop & 480p Raft Editions!
+                    Dual Audio Delight [x264/10Bit-HEVC Codec Magic] | The Whole Enchilada, er, Movie!
+                </em>
+            </span>
+        </p>
+        <p>
+            <img alt="Behold! The Treasure Map (aka Movie Poster) for Good Bad Ugly (2025)" class="movie-poster" decoding="async" fetchpriority="high" height="465" src="https://image.tmdb.org/t/p/w500/8DbYYluzdiGDAZzsaP7DWGbwfLd.jpg" title="Good Bad Ugly (2025) - The Loot You Seek!" width="300" />
+        </p>
+        
+        <div class="info-section">
+            <h2 class="kno-ecr-pt PZPZlf gsmt">Good Bad Ugly (<em style="font-family: 'Luckiest Guy', cursive; color: #FF4500;">Hindi Dubbed, by Blackbeard's Parrot!</em>)</h2>
+            <div>
+                <span class="info-label">Crow's Nest Report (iMDB Rating): </span>
+                <a data-wpel-link="external" href="https://www.imdb.com/title/tt27540217/" rel="noopener nofollow external noreferrer" style="color: #1E90FF; text-decoration: none;" target="_blank">7.0/10 (Not bad for a haul!)</a>
+            </div>
+            <div>
+                <span class="info-label">Type o' Booty (Genre):</span> Action | Drama | Thriller (Sounds like a proper raid!)
+            </div>
+            <div>
+                <span class="info-label">Crew on Deck (Stars):</span> Trisha Krishnan, Ajith Kumar, Simran (A fine lookin' crew!)
+            </div>
+            <div>
+                <span class="info-label">Cap'n o' this Vessel (Director):</span> Adhik Ravichandran (Steerin' us to glory!)
+            </div>
+            <div>
+                <span class="info-label">Parley Spoken (Language):</span> 
+                <span class="highlight-text">Hindi (ORG 5.1 - Loud as a Cannon!) + Tamil 5.1</span> / ESubs (Messages in bottles!)
+            </div>
+            <div>
+                <span class="info-label">Clarity o' the Spyglass (Quality): </span>
+                <span class="highlight-text">WEB-DL</span> 4K | 1080p | 720p | 480p (See every gold tooth!)
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2 class="screenshots-header">
+                <span style="color: #FFD700; font-family: 'Luckiest Guy', cursive;">
+                    <em style="font-family: 'Luckiest Guy', cursive;">: Sneak Peeks from the Crow's Nest! (Screen-Grabs, ye landlubber!) :</em>
+                </span>
+            </h2>
+            <div class="screenshots-container">
+                <a data-wpel-link="external" href="https://catimages.org/image/oRJyN" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="A glimpse of the action!" border="0" decoding="async" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h46m55s942.th.jpg" title="Look at this shiny bit!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRHaR" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="More cinematic gold!" border="0" decoding="async" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h47m00s510.th.jpg" title="Is that a treasure chest?!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRRRt" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="Drama unfolds on the high seas!" border="0" decoding="async" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h47m20s468.th.jpg" title="Explosions? Count me in!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRjt8" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="Intrigue and mystery abound!" border="0" decoding="async" loading="lazy" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h47m39s257.th.jpg" title="Who's that scurvy dog?" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRwbS" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="Swords might clash!" border="0" decoding="async" loading="lazy" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h48m19s471.th.jpg" title="A tense moment, arrr!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oR9uF" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="Thrills and spills, guaranteed!" border="0" decoding="async" loading="lazy" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h48m33s647.th.jpg" title="Don't walk the plank alone!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRLch" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="Pure cinematic treasure!" border="0" decoding="async" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h48m47s877.th.jpg" title="Good, Bad, or Ugly? You decide!" /></a>
+                <a data-wpel-link="external" href="https://catimages.org/image/oRoUg" rel="noopener nofollow external noreferrer" target="_blank">
+                    <img alt="The adventure continues!" border="0" decoding="async" loading="lazy" src="https://catimages.org/images/2025/05/08/vlcsnap-2025-05-07-14h49m11s661.th.jpg" title="Get your spyglass ready!" /></a>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <hr />
+            <h2 style="font-family: 'Luckiest Guy', cursive; color: #FFD700;">Good Bad Ugly (2025) Full Movie - Dual-Audio Plunder [Hindi & Tamil] HD Hoard!</h2>
+            <h2 class="download-links-header">
+                <span style="color: #32CD32; font-family: 'Luckiest Guy', cursive;">
+                    <em style="font-family: 'Luckiest Guy', cursive;">: X MARKS THE SPOT! (DOWNLOAD LINKS, YE SWABS!) :</em>
+                </span>
+            </h2>
+            
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hubcdn.cloud/dl/?link=https://pub-ae4961d7376541d7ac8c9c9f32eed981.r2.dev/Good.Bad.Ugly.2025.480p.WEB-DL.Hindi-Tamil.ESub.x264-HDHub4u.Ms.mkv" target="_blank">
+                        <span style="color: #FF4500;">480p Dinghy ⚡ [520MB o' Copper Coins!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~ARRRRRRR~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hubdrive.fit/file/2151331140" target="_blank">
+                        <span style="color: #FF4500;">720p HEVC Sloop [860MB o' Silver Pieces!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~YARR HARR~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <span style="color: #FF4500;">
+                        <a href="https://hblinks.pro/archives/89718" target="_blank">
+                            <span style="color: #FF4500;">720p 10bit HEVC Brigantine [1GB o' Gemstones!]</span>
+                        </a>
+                    </span>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~SHIVER ME TIMBERS~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hblinks.pro/archives/89701" target="_blank">
+                        <span style="color: #FF4500;">720p x264 Frigate [1.2GB o' Golden Goblets!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~BLOW ME DOWN~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hubdrive.fit/file/2364652092" target="_blank">
+                        <span style="color: #FF4500;">1080p HEVC Galleon [1.9GB o' Pearls & Rubies!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~TREASURE AHEAD~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hblinks.pro/archives/89717" target="_blank">
+                        <span style="color: #FF4500;">1080p 10bit HEVC Man-O-War [2.2GB o' Royal Jewels!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~ALL HANDS HOAY~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hblinks.pro/archives/89700" target="_blank">
+                        <span style="color: #FF4500;">1080p x264 Kraken's Hoard [2.8GB o' Pure Gold Bars!]</span>
+                    </a>
+                </em>
+            </div>
+            <div class="separator-line">⚓ ~~~~~~~~WEIGH ANCHOR & HOIST THE MIZZEN!~~~~~~~~ ⚓</div>
+            <div class="download-link-container">
+                <em style="font-family: 'Luckiest Guy', cursive;">
+                    <a href="https://hubdrive.fit/file/5435024021" target="_blank">
+                        <span style="color: #FF4500;">1080p WEB-DL KING'S RANSOM [6GB - The Motherlode, Cap'n!]</span>
+                    </a>
+                </em>
+            </div>
+            <div style="text-align: center; margin-top: 20px; font-family: 'Luckiest Guy', cursive; color: #FFA500;">
+                <br />
+                Happy Plunderin', ye scurvy dogs! May yer downloads be swift and yer bandwidth plentiful!
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
